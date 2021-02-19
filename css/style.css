@@ -1,0 +1,41 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+/* reset style */
+*{margin:0;padding:0; font-family:'Noto Sans KR';}
+ol,ul{list-style:none;}
+a{text-decoration:none; color:#000;}
+
+/* header style */
+header{width:100%; height:100%; _background:#aaa; margin-top:0; border-bottom:solid 3px #db0000; box-shadow:2px 1px 1px #aaa;  }
+header .gnbSec{width:100%; height:100%; position:relative; }
+.gnbSec .nav{width:80%; height:auto; display:flex; align-items: center; transform: translateX(15%); position:relative;}
+.gnbSec .nav:hover .navImg{display:block;}
+.gnbSec .nav h1{width:17%; height:auto; }
+.gnbSec .nav h1 .logo{}
+.gnbSec .nav h1>img{position:absolute; overflow:hidden;}
+
+
+.gnbSec .nav .loginBox{width:100%; height:auto; padding-left:40px; position:relative;}
+.gnbSec .nav .loginBox:hover .navImg{display:block;}
+.gnbSec .nav .loginBox .loginBtn{float:right; margin-right:15%;}
+.gnbSec .nav .loginBox .loginBtn a{font-weight:600;}
+.gnbSec .nav .loginBox .loginBtn a span{color:#888}
+.gnbSec .nav .loginBox .loginBtn a:first-child{color:rgb(255, 153, 0);}
+.gnbSec .nav .loginBox .loginBtn a,#language{font-size:11px; color:#888;}
+.gnbSec .nav .loginBox .loginBtn #language{width:90px; margin-left:10px; border: 1px solid #ccc;font-weight:300; }
+
+.gnbSec .nav .loginBox #gnb{width:80%; height:50px; transform:translateY(21%); font-weight:500; display:flex; }
+.gnbSec .nav .loginBox #gnb .gnbBox{width:100%; height:300%; font-size:15px;  position:relative;}
+.gnbSec .nav .loginBox #gnb:hover .gnbBox{border-left:1px solid #ccc;}
+.gnbSec .nav .loginBox #gnb .gnbBox:hover .gnbTit{color:red;}
+.gnbSec .nav .loginBox #gnb .gnbBox .gnbTit{letter-spacing:-1px; display:flex; _padding-right:40px; padding-left:10px; }
+.gnbSec .nav .loginBox #gnb .gnbBox .gnbTit span{visibility: hidden; }
+.gnbSec .nav .loginBox #gnb .gnbBox:hover .gnbTit span{font-size:25px; line-height:20px; visibility:visible; }
+.gnbSec .nav .loginBox #gnb .gnbBox ol{margin-top:5px;  z-index:999; opacity: 0; padding-left:10px;}
+.gnbSec .nav .loginBox #gnb:hover ol{opacity:100;}
+.gnbSec .nav .loginBox #gnb .gnbBox ol li{width:100%; font-size:12px; margin-top:3px; }
+.gnbSec .nav .loginBox #gnb .gnbBox ol li a{color:#777;}
+.gnbSec .nav .loginBox #gnb .gnbBox ol li a:hover{color:red;}
+
+
