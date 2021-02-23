@@ -10,7 +10,7 @@ a{text-decoration:none; color:#000;}
 header{width:100%; height:100%; _background:#aaa; margin-top:0;  }
 .gnbSec{width:100%; height:auto;  border-bottom:solid 3px #db0000; box-shadow:2px 1px 1px #aaa; overflow:hidden; background:#fff; transition: all 0.4s;}
 .gnbSec:hover .navImg{display:block;}
-.gnbSec .nav{width:80%; height:auto; display:flex; align-items: center; transform: translateX(15%); position:relative;}
+.gnbSec .nav{width:1000px; height:auto; display:flex; align-items: center; transform: translateX(15%); position:relative;}
 .gnbSec .nav h1{width:17%; height:auto; }
 .gnbSec .nav h1 .logo{}
 
@@ -40,13 +40,13 @@ header{width:100%; height:100%; _background:#aaa; margin-top:0;  }
 .gnbSec .navImg img{}
 
 /* main banner style */
-.mainImg{width: 100%;height: 400px;position:absolute; margin: 0 auto;overflow: hidden; top:9%; z-index: -9999;}
+.mainImg{width: 1924px;height:400px; position:absolute; margin: 0 auto;overflow: hidden; top:83px; z-index: -9999;}
 .mainImg input[type=radio]{display: none;}
 .mainImg a img{width:100%;height:400px;}
 
 ul.imgs{padding: 0; margin: 0; list-style: none;}
 ul.imgs li{position: absolute; _left: 640px; transition:all 9s; padding: 0;margin: 0;}
-.bullets{position: absolute;left: 50%;transform: translateX(200%);bottom: 5px;z-index: 2;}
+.bullets{position: absolute;left: 50%;transform: translateX(200%);top:350px;z-index: 2;}
 .bullets label{display: inline-block;border-radius: 50%; background-color:#fff;width: 10px;height: 10px;cursor: pointer; border:2px solid #bbb; box-shadow:2px 1px 1px #777; }
 /* 현재 선택된 불릿 배경 흰색으로 구분 표시 */
 .mainImg input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){background-color: orange; width:40px; height:10px; text-align:center; border-radius:25% /90%; border:1px solid rgba(255, 166, 0, 0.753);}
@@ -58,3 +58,49 @@ ul.imgs li{position: absolute; _left: 640px; transition:all 9s; padding: 0;margi
 .mainImg input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2){left: 0;transition: 0.5s;z-index:1;}
 .mainImg input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3){left: 0;transition: 0.5s;z-index:1;}
 .mainImg input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(4){left: 0;transition: 0.5s;z-index:1;}
+
+/* mainInfo style */
+.mainInfo{width:100%; height:auto; top:500px; position:absolute;}
+.mainInfo .mainInfoBox{width:60%; height:auto; margin:0 auto; display:flex;}
+
+/* timeBox style */
+.mainInfo .mainInfoBox .timeBox{width:17%; height:auto;  _margin:0 auto;}
+.mainInfo .mainInfoBox .timeBox b{font-size:14px;}
+.mainInfo .mainInfoBox .timeBox b span{color:orange;}
+.mainInfo .mainInfoBox .timeBox b a{margin-left:48px; position:relative;}
+.mainInfo .mainInfoBox .timeBox .mainDate{background:rgb(255, 136, 0); width:130px; height:70px;}
+.mainInfo .mainInfoBox .timeBox .mainDate .timeUpCon{font-size:18px; color:#fff; text-align: center; padding-top:8px;}
+.mainInfo .mainInfoBox .timeBox .mainDate .timeUpCon span{color:yellow;font-size:20px;}
+.mainInfo .mainInfoBox .timeBox .mainDate .timeDownCon{font-size:16px; text-align: center; font-weight: bold;}
+
+.mainInfo .mainInfoBox .timeBox table{border-collapse:collapse;border-spacing:0;}
+.mainInfo .mainInfoBox .timeBox table tr td a img{vertical-align:top }
+
+/* dynamicBox style */
+.mainInfo .mainInfoBox .dynamicBox{width:25%; height:auto; left:10px;}
+.mainInfo .mainInfoBox .dynamicBox .dynamicTit{width:100%; height:auto; padding-bottom:5px; border-bottom: 1px solid silver;}
+.mainInfo .mainInfoBox .dynamicBox .dynamicTit b{font-size:14px;}
+.mainInfo .mainInfoBox .dynamicBox .dynamicTit b span{color:orange;}
+.mainInfo .mainInfoBox .dynamicBox iframe{width:100%; height:auto; margin-top:10px;}
+
+/* newsBox style */
+.mainInfo .mainInfoBox .newsBox{width:24%; height:auto; margin-left:25px;}
+.mainInfo .mainInfoBox .newsBox .newsTit{width:100%; height:auto; padding-bottom:5px; border-bottom: 1px solid silver;}
+.mainInfo .mainInfoBox .newsBox .newsTit b{font-size:14px;}
+.mainInfo .mainInfoBox .newsBox .newsTit b span{color:orange;}
+.mainInfo .mainInfoBox .newsBox .newsTit b a{margin-left:100px; position:relative;}
+.mainInfo .mainInfoBox .newsBox ul{margin-top:10px; }
+.mainInfo .mainInfoBox .newsBox ul li{line-height: 23px;}
+.mainInfo .mainInfoBox .newsBox ul li a{font-size:13px; color:#333;  text-align: center;font-weight: 200;vertical-align: top; }
+.mainInfo .mainInfoBox .newsBox ul li:hover a{color:orange; text-decoration: underline; }
+.mainInfo .mainInfoBox .newsBox .btnLink{display:flex; margin-top:20px;}
+
+/* snsLink style */
+.mainInfo .mainInfoBox .snsLink{background:#eee; margin-left:50px;}
+.mainInfo .mainInfoBox .snsLink ul{display:flex; width:100%; height:30px; }
+.mainInfo .mainInfoBox .snsLink ul li{width:50%; text-align: center; }
+.mainInfo .mainInfoBox .snsLink ul li a{vertical-align: middle; color:#888; font-size:13px;}
+.mainInfo .mainInfoBox .snsLink iframe{width:100%; height:85%;}
+
+.footerSec{background:#ddd;}
+
