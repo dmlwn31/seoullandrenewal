@@ -13,3 +13,20 @@ function carousel() {
     x[slideIndex-1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+
+// 페이스북/블로그 탭 설정, active클래스 
+$(function () {
+
+$("button").click(function(){
+  let index = $(this).index();
+
+  $(".panels p").hide();
+  $(".panels p").eq(index).show();
+
+  $(this).removeClass("active");
+  $(this).eq(index).addClass("active");
+});
+
+$("button").eq(0).trigger("click");
+});
+

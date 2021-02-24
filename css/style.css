@@ -10,7 +10,7 @@ a{text-decoration:none; color:#000;}
 header{width:100%; height:100%; _background:#aaa; margin-top:0;  }
 .gnbSec{width:100%; height:auto;  border-bottom:solid 3px #db0000; box-shadow:2px 1px 1px #aaa; overflow:hidden; background:#fff; transition: all 0.4s;}
 .gnbSec:hover .navImg{display:block;}
-.gnbSec .nav{width:1000px; height:auto; display:flex; align-items: center; transform: translateX(15%); position:relative;}
+.gnbSec .nav{width:1000px; height:auto; display:flex; align-items: center; margin-left:20%; position:relative;}
 .gnbSec .nav h1{width:17%; height:auto; }
 .gnbSec .nav h1 .logo{}
 
@@ -60,11 +60,11 @@ ul.imgs li{position: absolute; _left: 640px; transition:all 9s; padding: 0;margi
 .mainImg input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(4){left: 0;transition: 0.5s;z-index:1;}
 
 /* mainInfo style */
-.mainInfo{width:100%; height:auto; top:500px; position:absolute;}
-.mainInfo .mainInfoBox{width:60%; height:auto; margin:0 auto; display:flex;}
+.mainInfo{width:1930px; height:256px; top:500px; position:absolute; left:10%; }
+.mainInfo .mainInfoBox{width:80%; height:255px; display:flex; position:absolute; justify-content: center;}
 
 /* timeBox style */
-.mainInfo .mainInfoBox .timeBox{width:17%; height:auto;  _margin:0 auto;}
+.mainInfo .mainInfoBox .timeBox{width:160px; height:199px;}
 .mainInfo .mainInfoBox .timeBox b{font-size:14px;}
 .mainInfo .mainInfoBox .timeBox b span{color:orange;}
 .mainInfo .mainInfoBox .timeBox b a{margin-left:48px; position:relative;}
@@ -77,15 +77,15 @@ ul.imgs li{position: absolute; _left: 640px; transition:all 9s; padding: 0;margi
 .mainInfo .mainInfoBox .timeBox table tr td a img{vertical-align:top }
 
 /* dynamicBox style */
-.mainInfo .mainInfoBox .dynamicBox{width:25%; height:auto; left:10px;}
-.mainInfo .mainInfoBox .dynamicBox .dynamicTit{width:100%; height:auto; padding-bottom:5px; border-bottom: 1px solid silver;}
+.mainInfo .mainInfoBox .dynamicBox{width:250px; height:181px;}
+.mainInfo .mainInfoBox .dynamicBox .dynamicTit{width:100%; height:24px; padding-bottom:5px; border-bottom: 1px solid silver;}
 .mainInfo .mainInfoBox .dynamicBox .dynamicTit b{font-size:14px;}
 .mainInfo .mainInfoBox .dynamicBox .dynamicTit b span{color:orange;}
-.mainInfo .mainInfoBox .dynamicBox iframe{width:100%; height:auto; margin-top:10px;}
+.mainInfo .mainInfoBox .dynamicBox iframe{width:240px; height:150px; margin-top:10px;}
 
 /* newsBox style */
-.mainInfo .mainInfoBox .newsBox{width:24%; height:auto; margin-left:25px;}
-.mainInfo .mainInfoBox .newsBox .newsTit{width:100%; height:auto; padding-bottom:5px; border-bottom: 1px solid silver;}
+.mainInfo .mainInfoBox .newsBox{width:250px; height:199px; margin-left:30px;}
+.mainInfo .mainInfoBox .newsBox .newsTit{width:100%; height:24px; padding-bottom:5px; border-bottom: 1px solid silver;}
 .mainInfo .mainInfoBox .newsBox .newsTit b{font-size:14px;}
 .mainInfo .mainInfoBox .newsBox .newsTit b span{color:orange;}
 .mainInfo .mainInfoBox .newsBox .newsTit b a{margin-left:100px; position:relative;}
@@ -96,11 +96,19 @@ ul.imgs li{position: absolute; _left: 640px; transition:all 9s; padding: 0;margi
 .mainInfo .mainInfoBox .newsBox .btnLink{display:flex; margin-top:20px;}
 
 /* snsLink style */
-.mainInfo .mainInfoBox .snsLink{background:#eee; margin-left:50px;}
-.mainInfo .mainInfoBox .snsLink ul{display:flex; width:100%; height:30px; }
-.mainInfo .mainInfoBox .snsLink ul li{width:50%; text-align: center; }
-.mainInfo .mainInfoBox .snsLink ul li a{vertical-align: middle; color:#888; font-size:13px;}
-.mainInfo .mainInfoBox .snsLink iframe{width:100%; height:85%;}
+.mainInfo .mainInfoBox .snsLink{ width:290px; height:195px; background:#eee; margin-left:30px;}
+.mainInfo .mainInfoBox .snsLink .snsBtn{display:flex; width:100%; height:30px; }
+.mainInfo .mainInfoBox .snsLink .snsBtn button{width:50%; text-align: center; border:1px solid #bbb; vertical-align: middle; color:#888; font-size:13px; font-weight: 100;}
+.mainInfo .mainInfoBox .snsLink .snsBtn button.active{color:mediumblue; background:#fff; border:1px solid #ddd;}
+.mainInfo .mainInfoBox .snsLink .panels img{width:100%; height:auto;}
 
-.footerSec{background:#ddd;}
+/* footer style */
+.footerSec{width:100%; height:160px; background:#fff; position:absolute; top: 740px;}
+.footerSec .footer{display:flex; width:100%; height:auto; background:#eee; position:relative;}
+.footerSec .footer .introduce{display:flex;position:absolute; left:20%; line-height: 30px;}
+.footerSec .footer .introduce a{font-size:11px; color:#888;}
+.footerSec .footer .introduce a span{padding:0 7px 0 7px; }
+.footerSec .footer .fa-faLogo{display:flex;  margin-left:60%;}
 
+.footerSec .footerLow{width:70%; position:absolute; left:20%; top:40%;}
+.footerSec .footerLow select{border:1px solid #bbb; position:absolute; top:5%; right:20%; font-weight: 100;}
