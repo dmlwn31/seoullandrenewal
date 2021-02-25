@@ -23,6 +23,8 @@ header{width:100%; height:100%; _background:#aaa; margin-top:0;  }
 .gnbSec .nav .loginBox .loginBtn a,#language{font-size:11px; color:#888;}
 .gnbSec .nav .loginBox .loginBtn #language{width:90px; margin-left:10px; border: 1px solid #ccc;font-weight:300; }
 
+.gnbSec .nav .loginBox .loginAwesome a i{font-size:17px; display:none; margin-left:68%; color:#bbb}
+
 .gnbSec .nav .loginBox #gnb{width:80%; height:50px; transform:translateY(21%); font-weight:500; display:flex; }
 .gnbSec .nav .loginBox #gnb .gnbBox{width:100%; height:300%; font-size:15px;}
 .gnbSec .nav .loginBox #gnb:hover .gnbBox{border-left:1px solid #ccc;}
@@ -38,6 +40,11 @@ header{width:100%; height:100%; _background:#aaa; margin-top:0;  }
 
 .gnbSec .navImg{width:80%; margin-left:10%;height:140px; display:none; ;overflow:hidden; z-index: -999;}
 .gnbSec .navImg img{}
+
+/* mNav style */
+.mNav{width:100%; display:flex; border-bottom:3px solid red;}
+.mNav .mIcon{margin-left:60%;}
+.mNav .mIcon span i{font-size:30px; line-height: 250%; color:red; cursor:pointer;}
 
 /* main banner style */
 .mainImg{width: 1924px;height:400px; position:absolute; margin: 0 auto;overflow: hidden; top:83px; z-index: -9999;}

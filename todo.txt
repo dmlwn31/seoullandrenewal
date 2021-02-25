@@ -1,0 +1,18 @@
+1.네비게이션 호버 문제 
+2.배너 이미지 슬라이더시 라벨도 같이 움직이게하기
+3.snsBtn button addClass문제
+4.select 2개 타이틀 고정  
+
+
+
+탭설정
+$(function () {
+   $(".snsBtn").click(function (){
+     let idx = $(this).index();
+     $(".panels p").hide();
+     $(".panels p").eq(idx).show();
+   });
+   $(".snsBtn").eq(0).trigger("click");
+ });
+
+ 

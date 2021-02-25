@@ -14,6 +14,23 @@ function carousel() {
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
+//mobile menu click
+let mobileMenu = function(){
+  $(".mIcon").click(function(){
+    $(this).toggleClass("on");
+    if($(this).hasClass("on")){
+      $(this).find("i").attr("class", "fa fa-times");
+      // $(".navigation").slideDown("fast");
+    } else {
+      $(this).find("i").attr("class", "fa fa-bars");
+      // $(".navigation").slideup("fast");
+    }
+  });
+}
+
+mobileMenu();
+  
+
 // 페이스북/블로그 탭 설정, active클래스 
 $(function () {
 
@@ -29,4 +46,5 @@ $("button").click(function(){
 
 $("button").eq(0).trigger("click");
 });
+
 
