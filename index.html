@@ -20,12 +20,49 @@
   <body>
     <div class="wrap">
       <header>
-        <div class="mNav">
-          <h1>
-            <a href="#" class="mLogo"><img src="img/logo_1.jpg" alt="" /></a>
-          </h1>
-          <div class="mIcon">
-            <span><i class="fa fa-bars"></i></span>
+        <div class="mNavSec">
+          <div class="mNav">
+            <h1>
+              <a href="#" class="mLogo"><img src="img/logo_1.jpg" alt="" /></a>
+            </h1>
+            <div class="mIcon">
+              <span><i class="fa fa-bars"></i></span>
+            </div>
+          </div>
+          <div class="mNavSlider">
+            <ul class="mNavTit">
+              <div class="mLoginBox" style="display: flex">
+                <div class="mLogin" style="margin-left: 70%">
+                  <a href="#">
+                    <i
+                      class="fa fa-user-circle-o"
+                      style="
+                        font-size: 18px;
+                        color: #888;
+                        padding: 10px;
+                        padding-top: 0;
+                      "
+                    ></i
+                  ></a>
+                  <select
+                    name="LANGUAGE"
+                    id="language"
+                    placeholder="LANGUAGE"
+                    style="height: 20px"
+                  >
+                    <option value="english">LANGUAGE</option>
+                    <option value="english">English</option>
+                    <option value="jpanese">Jpanese</option>
+                    <option value="chinese">chinese</option>
+                  </select>
+                </div>
+              </div>
+              <li><a href="#">계획세우기</a></li>
+              <li><a href="#">단체프로그램</a></li>
+              <li><a href="#">연간이용권</a></li>
+              <li><a href="#">예매/예약</a></li>
+            </ul>
+          </div>
         </div>
         <div class="gnbSec">
           <div class="nav">
@@ -275,11 +312,6 @@
         </div>
         <div class="footerLow">
           <img src="./img/footer_1.png" alt="" />
-          <select name="LANGUAGE" id="language" placeholder="LANGUAGE">
-            <option value="english">Family Site</option>
-            <option value="english">캘리포니아 피자치킨</option>
-            <option value="english">로즈휠</option>
-          </select>
         </div>
       </div>
       <!-- end of footer -->

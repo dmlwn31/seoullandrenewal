@@ -10,20 +10,20 @@ a{text-decoration:none; color:#000;}
 header{width:100%; height:100%; _background:#aaa; margin-top:0;  }
 .gnbSec{width:100%; height:auto;  border-bottom:solid 3px #db0000; box-shadow:2px 1px 1px #aaa; overflow:hidden; background:#fff; transition: all 0.4s;}
 .gnbSec:hover .navImg{display:block;}
-.gnbSec .nav{width:1000px; height:auto; display:flex; align-items: center; margin-left:20%; position:relative;}
+.gnbSec .nav{ display:flex; align-items: center; margin-left:20%; position:relative; outline:none;}
 .gnbSec .nav h1{width:17%; height:auto; }
 .gnbSec .nav h1 .logo{}
 
 
 .gnbSec .nav .loginBox{width:100%; height:auto; padding-left:40px;}
-.gnbSec .nav .loginBox .loginBtn{float:right; margin-right:15%;}
+.gnbSec .nav .loginBox .loginBtn{float:right; margin-right:20%;}
 .gnbSec .nav .loginBox .loginBtn a{font-weight:600;}
 .gnbSec .nav .loginBox .loginBtn a span{color:#888}
 .gnbSec .nav .loginBox .loginBtn a:first-child{color:rgb(255, 153, 0);}
 .gnbSec .nav .loginBox .loginBtn a,#language{font-size:11px; color:#888;}
 .gnbSec .nav .loginBox .loginBtn #language{width:90px; margin-left:10px; border: 1px solid #ccc;font-weight:300; }
 
-.gnbSec .nav .loginBox .loginAwesome a i{font-size:17px; display:none; margin-left:68%; color:#bbb}
+.gnbSec .nav .loginBox .loginAwesome a i{font-size:17px; display:none; margin-left:60%; color:#bbb;}
 
 .gnbSec .nav .loginBox #gnb{width:80%; height:50px; transform:translateY(21%); font-weight:500; display:flex; }
 .gnbSec .nav .loginBox #gnb .gnbBox{width:100%; height:300%; font-size:15px;}
@@ -38,18 +38,28 @@ header{width:100%; height:100%; _background:#aaa; margin-top:0;  }
 .gnbSec .nav .loginBox #gnb .gnbBox ol li a{color:#777;}
 .gnbSec .nav .loginBox #gnb .gnbBox ol li a:hover{color:red;}
 
-.gnbSec .navImg{width:80%; margin-left:10%;height:140px; display:none; ;overflow:hidden; z-index: -999;}
+.gnbSec .navImg{width:80%; margin-left:17%;height:140px; display:none; ;overflow:hidden; z-index: -999;}
 .gnbSec .navImg img{}
 
-/* mNav style */
-.mNav{width:100%; display:flex; border-bottom:3px solid red;}
-.mNav .mIcon{margin-left:60%;}
-.mNav .mIcon span i{font-size:30px; line-height: 250%; color:red; cursor:pointer;}
+/* mobile Nav style */
+.mNavSec{width:100%; border-bottom:3px solid red; display:none; background:#fff;}
+.mNavSec .mNav{width:100%; display:flex;}
+.mNavSec .mNav .mIcon{ margin-left:60%;}
+.mNavSec .mNav .mIcon span i{font-size:30px; line-height: 250%; color:red; cursor:pointer;}
+
+.mNavSec .mNavSlider{width:100%; height:auto;}
+.mNavSec .mNavSlider .mNavTit{width:100%; background:#fff; margin-top:-1px;}
+.mNavSec .mNavSlider .mNavTit li{ width:100%; height:50px; border-top:1px solid #888; text-align: center; padding-top:18px; line-height:30px; font-weight:500; transition:all 0.8s;}
+.mNavSec .mNavSlider .mNavTit li:hover{background:orange; }
+.mNavSec .mNavSlider .mNavTit li:hover a{color:#fff;}
 
 /* main banner style */
-.mainImg{width: 1924px;height:400px; position:absolute; margin: 0 auto;overflow: hidden; top:83px; z-index: -9999;}
+.mainImg{width: 100%; height:400px; position:absolute; margin: 0 auto;  top:83px; z-index: -999; outline:none; overflow: hidden; }
+.mainImg .imgs{width:100%; height:auto; }
+.mainImg .imgs li{width:100%; height:400px;}
 .mainImg input[type=radio]{display: none;}
-.mainImg a img{width:100%;height:400px;}
+.mainImg .imgs li a{width:100%; height:auto;}
+.mainImg .imgs li a img{width:1920px;height:400px;outline:none; overflow: hidden; }
 
 ul.imgs{padding: 0; margin: 0; list-style: none;}
 ul.imgs li{position: absolute; _left: 640px; transition:all 9s; padding: 0;margin: 0;}
@@ -67,8 +77,8 @@ ul.imgs li{position: absolute; _left: 640px; transition:all 9s; padding: 0;margi
 .mainImg input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(4){left: 0;transition: 0.5s;z-index:1;}
 
 /* mainInfo style */
-.mainInfo{width:1930px; height:256px; top:500px; position:absolute; left:10%; }
-.mainInfo .mainInfoBox{width:80%; height:255px; display:flex; position:absolute; justify-content: center;}
+.mainInfo{width:100%; height:256px; top:500px; position:absolute; margin-left:0%; outline:none; }
+.mainInfo .mainInfoBox{width:100%; height:255px; display:flex; _position:absolute; justify-content: center; outline:none;}
 
 /* timeBox style */
 .mainInfo .mainInfoBox .timeBox{width:160px; height:199px;}
@@ -107,15 +117,14 @@ ul.imgs li{position: absolute; _left: 640px; transition:all 9s; padding: 0;margi
 .mainInfo .mainInfoBox .snsLink .snsBtn{display:flex; width:100%; height:30px; }
 .mainInfo .mainInfoBox .snsLink .snsBtn button{width:50%; text-align: center; border:1px solid #bbb; vertical-align: middle; color:#888; font-size:13px; font-weight: 100;}
 .mainInfo .mainInfoBox .snsLink .snsBtn button.active{color:mediumblue; background:#fff; border:1px solid #ddd;}
-.mainInfo .mainInfoBox .snsLink .panels img{width:100%; height:auto;}
+.mainInfo .mainInfoBox .snsLink .panels img{width:290px; height:auto;}
 
 /* footer style */
 .footerSec{width:100%; height:160px; background:#fff; position:absolute; top: 740px;}
 .footerSec .footer{display:flex; width:100%; height:auto; background:#eee; position:relative;}
-.footerSec .footer .introduce{display:flex;position:absolute; left:20%; line-height: 30px;}
+.footerSec .footer .introduce{display:flex;margin-left:30%; left:20%; line-height: 30px;}
 .footerSec .footer .introduce a{font-size:11px; color:#888;}
 .footerSec .footer .introduce a span{padding:0 7px 0 7px; }
-.footerSec .footer .fa-faLogo{display:flex;  margin-left:60%;}
+.footerSec .footer .fa-faLogo{display:flex;  _margin-left:60%;}
 
 .footerSec .footerLow{width:70%; position:absolute; left:20%; top:40%;}
-.footerSec .footerLow select{border:1px solid #bbb; position:absolute; top:5%; right:20%; font-weight: 100;}

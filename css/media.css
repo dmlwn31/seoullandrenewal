@@ -1,69 +1,79 @@
 @media screen and (max-width:1600px){
-  .mainImg{left:-5%}
-  .mainInfo{margin-left:-5%;}
+  .mainImg .imgs li a img{margin-left:-10%;}
 }
-@media screen and (max-width:1500px){
-  .mainImg{left:-10%}
-  .mainInfo{margin-left:-10%;}
-}
+
 @media screen and (max-width:1400px){
-  .mainImg{left:-15%;}
-  .mainInfo{margin-left:-15%;}
+  .gnbSec .nav{width:100%; margin-left:15%;}
+  .mainImg .imgs li a img{margin-left:-20%;}
 }
-@media screen and (max-width:1300px){
-  .mainImg{left:-20%;}
-  .mainInfo{margin-left:-20%;}
-}
+
 @media screen and (max-width:1200px){
-  .mainImg{left:-25%;}
-  .mainInfo{margin-left:-25%;}
+  .mainImg .imgs li a img{margin-left:-30%;}
+  .mainInfo .mainInfoBox .newsBox{display:none;}
+  .footerSec .footer .introduce{margin-left:30%;}
 }
-@media screen and (max-width:1100px){
-  .gnbSec .nav{margin-left:10%;}
-  .mainImg{left:-35%;}
-  .mainInfo{margin-left:-34%;}
-}
+
 @media screen and (max-width:1000px){
-  .gnbSec .nav{margin-left:0%;}
-  .mainImg{left:-40%;}
+  .mainImg .imgs li a img{margin-left:-40%;}
 }
+
 @media screen and (max-width:900px){
-  .mainImg{left:-50%;}
+  .gnbSec .nav{margin-left:5%;}
   .gnbSec .nav .loginBox .loginBtn a{display:none;}
   .gnbSec .nav .loginBox .loginAwesome a i{display:inline;}
   .gnbSec .nav .loginBox .loginBtn #language{margin-left:-20%;}
+  .mainImg .imgs li a img{margin-left:-60%;}
 }
+
 @media screen and (max-width:870px){
-  .gnbSec .nav .loginBox{ padding-left:0;}
+  .gnbSec .nav{margin-left:0%;}
   .gnbSec .nav .loginBox .loginAwesome a i{margin-left:58%;}
-  .gnbSec .nav .loginBox .loginBtn #language{margin-left:-110%;}
+  .gnbSec .nav .loginBox #gnb{margin-left:20px; padding-right:60px;}
   .gnbSec .nav .loginBox #gnb:hover .gnbBox{border:0;}
   .gnbSec .nav .loginBox #gnb .gnbBox ol li{display:none;}
+  .gnbSec .nav .loginBox #gnb .gnbBox .gnbTit{_font-size:12px}
   .gnbSec .navImg{width:100%; height:0;}
   .gnbSec .navImg img{display:none;}
+  .mainInfo .mainInfoBox .snsLink{display:none;}
+  .footerSec .footer{flex-direction: column-reverse;}
+  .footerSec .footer .fa-faLogo{margin-left:50%;}
+  .footerSec .footer .introduce a span{padding:0 1px 0 1px; }
+  .footerSec .footerLow{width:100%;  left:0%; top:57%;}
+
 
 }
 @media screen and (max-width:800px){
-  .mainImg{left:-55%;}
-  .gnbSec .nav .loginBox .loginAwesome a i{margin-left:48%;}
-  .gnbSec .nav .loginBox .loginBtn #language{margin-left:-200%;}
+  .gnbSec .nav .loginBox .loginAwesome a i{margin-left:56%;}
   .gnbSec .nav .loginBox #gnb .gnbBox ol li{margin-right:0;}
   .gnbSec .nav .loginBox #gnb .gnbBox{width:95px; font-size:14px;}
+  .mainImg .imgs li a img{margin-left:-70%;}
 }
+
 @media screen and (max-width:700px){
-  .gnbSec .nav .loginBox .loginAwesome a i{margin-left:38%;}
-  .gnbSec .nav .loginBox .loginBtn #language{margin-left:-300%;}
-  .mainImg{left:-80%;}
- 
+  .gnbSec .nav .loginBox .loginAwesome a i{margin-left:54%;}
+  .mainImg .imgs li a img{margin-left:-85%;}
+  .bullets{margin-left:-10%;}
 }
+
 @media screen and (max-width:620px){
+  .mNavSec{display:block;}
   .gnbSec{display:none;}
+  .mainImg .imgs li a img{margin-left:-100%;}
+  .bullets{margin-left:-20%;}
+  .footerSec .footer .introduce{margin-left:5%;}
+  .footerSec .footer .fa-faLogo{margin-left:30%;}
 }
+
 @media screen and (max-width:600px){
-  .mainImg{left:-100%;  _width:50%;}
+  .mNavSec .mNav .mIcon{margin-left:50%;}
+  .mainImg .imgs li a img{margin-left:-110%;}
   
 }
+
+
 @media screen and (max-width:500px){
-  .mainImg{left:-120%;}
+  .mainImg .imgs li a img{margin-left:-147%;}
 }
+
+
 
